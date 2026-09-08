@@ -2,7 +2,7 @@
 
 **Evidence-first review of AI and financial marketing claims in an Indian regulatory context.**
 
-ClaimCheck is a portfolio-ready research prototype that identifies risky language, checks whether analyst-supplied evidence overlaps with a claim and connects each issue to relevant SEBI, RBI or MCA review guidance. It never declares fraud, compliance or investment suitability.
+ClaimCheck is a research prototype that identifies risky language, checks whether analyst-supplied evidence overlaps with a claim and connects each issue to relevant SEBI, RBI or MCA review guidance. It never declares fraud, compliance or investment suitability.
 
 Built by Vishesh Gupta. The engine uses transparent rules and lexical matching; it does not use or train an LLM.
 
