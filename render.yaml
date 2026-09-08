@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: claimcheck-finance-india
+    runtime: node
+    plan: free
+    buildCommand: npm test
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: TRUST_PROXY
+        value: "1"
+      - key: RATE_LIMIT_MAX
+        value: "30"
+      - key: RATE_LIMIT_WINDOW_MS
+        value: "60000"

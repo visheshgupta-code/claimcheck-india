@@ -1,0 +1,7 @@
+.DS_Store
+.git
+.github
+docs/screenshots
+node_modules
+*.log
+*.zip

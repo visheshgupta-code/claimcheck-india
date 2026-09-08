@@ -1,0 +1,17 @@
+{
+  "name": "claimcheck-finance",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "description": "India-first evidence review of AI and financial marketing claims.",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node --watch server.mjs",
+    "test": "node --test",
+    "test:e2e": "python3 tests/e2e.py",
+    "evaluate:100": "node scripts/evaluate-organisations.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
