@@ -1,0 +1,67 @@
+{
+  "version": "2026-09-05",
+  "jurisdiction": "India",
+  "notice": "These official references are review guidance, not evidence that a specific entity is registered or that a specific claim is true.",
+  "contexts": [
+    { "id": "investment-advice", "label": "Investment advice / research" },
+    { "id": "securities", "label": "Securities / trading platform" },
+    { "id": "digital-lending", "label": "Digital lending / loan app" },
+    { "id": "general-fintech", "label": "General fintech / AI product" }
+  ],
+  "sources": [
+    {
+      "id": "sebi-recognised-intermediaries",
+      "authority": "SEBI",
+      "title": "Recognised Intermediaries",
+      "url": "https://www.sebi.gov.in/sebiweb/other/OtherAction.do?doRecognised=yes",
+      "appliesTo": ["investment-advice", "securities", "general-fintech"],
+      "ruleIds": ["regulatory-status"],
+      "reviewPrompt": "Verify the exact legal name and SEBI registration number in the official intermediary register. A number printed in an advertisement is not self-verifying."
+    },
+    {
+      "id": "sebi-advertisement-code",
+      "authority": "SEBI",
+      "title": "Advertisement Code for Investment Advisers and Research Analysts",
+      "url": "https://www.sebi.gov.in/legal/circulars/apr-2023/advertisement-code-for-investment-advisers-ia-and-research-analysts-ra-_69798.html",
+      "appliesTo": ["investment-advice"],
+      "ruleIds": ["guarantee", "performance", "superlative", "testimonial"],
+      "reviewPrompt": "Check the claim against the applicable advertisement code, including restrictions around assured returns, risk-free language, performance references and misleading testimonials."
+    },
+    {
+      "id": "sebi-investor-caution",
+      "authority": "SEBI",
+      "title": "Public caution on investment advisers and research analysts",
+      "url": "https://www.sebi.gov.in/media/press-releases/jun-2016/sebi-cautions-public-to-deal-with-only-sebi-registered-investment-advisers-and-research-analysts_32627.html",
+      "appliesTo": ["investment-advice", "securities"],
+      "ruleIds": ["regulatory-status", "guarantee", "tips-channel"],
+      "reviewPrompt": "Check registration status and inspect whether tips, recommendations or unrealistic-return messages are being distributed through public or direct-message channels."
+    },
+    {
+      "id": "rbi-digital-lending-directions",
+      "authority": "RBI",
+      "title": "Reserve Bank of India (Digital Lending) Directions, 2025",
+      "url": "https://website.rbi.org.in/documents/d/rbi/directionsondigitallending",
+      "appliesTo": ["digital-lending"],
+      "ruleIds": ["regulatory-status", "lending-cost", "data-use"],
+      "reviewPrompt": "Confirm the regulated entity or lending-service-provider relationship and review APR, Key Fact Statement, consent, data minimisation and grievance disclosures."
+    },
+    {
+      "id": "rbi-dla-directory-notice",
+      "authority": "RBI",
+      "title": "Public repository of Digital Lending Apps",
+      "url": "https://rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=58449",
+      "appliesTo": ["digital-lending"],
+      "ruleIds": ["regulatory-status"],
+      "reviewPrompt": "Verify any claimed association between a loan app and an RBI-regulated entity. The directory is based on entity-submitted information and still requires human review."
+    },
+    {
+      "id": "mca-master-data",
+      "authority": "MCA",
+      "title": "View Company / LLP Master Data",
+      "url": "https://www.mca.gov.in/",
+      "appliesTo": ["investment-advice", "securities", "digital-lending", "general-fintech"],
+      "ruleIds": ["entity-identity", "regulatory-status"],
+      "reviewPrompt": "Verify the company or LLP legal name and status using MCA master data. MCA incorporation is not equivalent to SEBI or RBI authorisation."
+    }
+  ]
+}
