@@ -1,4 +1,4 @@
-# ClaimCheck Finance — India Edition
+ClaimCheck Finance — India Edition
 
 **Evidence-first review of AI and financial marketing claims in an Indian regulatory context.**
 
